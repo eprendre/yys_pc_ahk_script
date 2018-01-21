@@ -1,0 +1,52 @@
+<ppg3d>
+	<modules>
+		<module File="python.dll" Name="Python" />
+		<module File="collision.dll" Name="Collision" />
+	</modules>
+	<client 
+		DumpPath="dumps" 
+		DumpType="0"
+		FileSystem="4"
+		FixedLogicRate="False"
+		InitViewBackground="G37Launch-Landscape.png"
+		LimitDisplayRate="True"
+		NpkRelativePath="\Documents"
+		ResourceRoot=".\res"
+		ShowDumpDlg="False"
+		ShowInitProgress="True"
+		ShowLogWindow="False"
+		UseCADisplayLink="True"
+		WindowAutoSize="False"
+		WindowClientHeight="720"
+		WindowClientWidth="1280">
+	<uis>
+		<cocosui Passing="False"></cocosui>
+		<gesture Passing="True"></gesture>
+		<pygame Passing="False"></pygame>
+	</uis>		
+	<cocosui>
+		<FontNameMap>
+			<FontNameMap0 Name = '微软雅黑' Value = 'huakang.ttc' />
+		</FontNameMap>
+	</cocosui>
+	</client>
+	<render 
+		Depth="32" 
+		EnableRenderThread="False" 
+		EnableThreadedGPURes="False" 
+		MultiSample="0" 
+		VSync="False"
+		OneLightOptimize = 'True'>
+	</render>
+	<world EmitterAcceInSpace="False" GpuParticle="False" GpuSkinningEnable="True" PixelDecal="False" SubMeshBatching="True">
+	</world>
+	<flashui EnableTextureCache="False" MouseEventToTouch="True" PreferNonPow2Texture="True">
+	</flashui>
+	<rsync Enable='False'></rsync>
+	<python Optimize="True" ThreadEnable="True"></python>
+	<log 
+		FileName="%WORKDIR%\log.txt" 
+		OldFileName="%WORKDIR%\log_old.txt"
+	>
+	</log>
+</ppg3d>
